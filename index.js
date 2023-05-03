@@ -24,22 +24,8 @@ async function getMovies(url){
 //         movieEl.classList.add('movie')
 //       movieEl.innerHTML = `
 //       <main>
-//     <div class="movie">
-//         <img src= "${IMGPATH + poster_path}" alt="${title}">
-//     <div class="movie-info">
-//         <h3>${title}</h3>
-//         <span class="${getclassByRate(vote_average)}">${vote_average}</span>
-       
-//     </div>
-//     </div>
-// </main> `
-// // //ktu e thirrum funksionin edhe ja bojm pass si parameter
-//     //vlerat e vote_average qe i morum prej api
+//     
 
-//         main.appendChild(movieEl)
-//     })
-
-//     return respData;
 }
 
 function showMovies(movies){
@@ -61,12 +47,13 @@ movies.forEach((movie) =>{
     
     </div
     </div> `
-// //ktu e thirrum funksionin edhe ja bojm pass si parameter
-    //vlerat e vote_average qe i morum prej api
+
 console.log(overview)
         main.appendChild(movieEl)
     })
 }
+// //ktu e thirrum funksionin edhe ja bojm pass si parameter
+    //vlerat e vote_average qe i morum prej api
 //ktu kur ti vje funksionit vote_average si parameter bohen krahasimet me if
 function getclassByRate(vote){
     if(vote >= 8){
@@ -80,14 +67,9 @@ function getclassByRate(vote){
  
 }
 
-//  <span class="${getclassByRate(vote_average)}">${vote_average}</span>
-//Ky është një kod JavaScript që përpunon një përgjigje të dhënë nga një API filmash dhe krijon elemente HTML për secilin film.
 
 //Kodit i është shtuar një funksion "getclassByRate"
 //që merr një vlerë votimi si argument dhe kthen një klasë CSS në varësi të votës së dhënë. Nëse vota është më e madhe se 8, kthen klasën "green"; nëse është midis 5 dhe 8, kthen klasën "orange"; dhe nëse është më e vogël se 5, kthen klasën "red".
-
-////Përveç kësaj, kodit i është shtuar një div klasë "movie" 
-//që mbart të dhënat për secilin film dhe i shtohet në fund të body të dokumentit HTML.
 
 
 form.addEventListener('submit', (e) =>{
